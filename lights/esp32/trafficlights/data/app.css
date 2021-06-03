@@ -1,0 +1,14 @@
+html {font-family: Arial; display: inline-block; text-align: center;}
+h2 {font-size: 3.0rem;}
+p {font-size: 3.0rem;}
+body {max-width: 600px; margin:0px auto; padding-bottom: 25px;}
+.switch {position: relative; width: 68px; height: 68px; display: block !important; margin: auto; margin-top: 2px;}
+.switch input {display: none}
+.slider {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; border-radius: 50%;}
+.slider:before {position: absolute; content: ""; height: 52px; width: 52px; left: 8px; bottom: 8px; background-color: #fff; border-radius: 50%;}
+input#r:checked+.slider {background-color: #b30000}
+input#y:checked+.slider {background-color: #ffb300}
+input#g:checked+.slider {background-color: #00b300}
+input:checked+.slider:before {-webkit-transform: translateX(52px); -ms-transform: translateX(52px); transform: translateX(60px)}
+button {width: 100px; padding: 0.5em;}
+div {margin-top: 20px;}
